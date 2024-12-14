@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PartnerAPP</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<!-- jQuery (required by many plugins, should be loaded first) -->
+<script src="/assets/js/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+<!-- Font Source (Font Library) -->
+<link rel="stylesheet" href="/assets/css/index.css">
+
+<!-- Overlay Scrollbars (for custom scrollbar styles) -->
+<link rel="stylesheet" href="/assets/css/overlayscrollbars.min.css">
+
+<!-- Bootstrap Icons (for icon support) -->
+<link rel="stylesheet" href="/assets/css/bootstrap-icons.min.css">
+
+<!-- AdminLTE (custom admin theme) -->
+<link rel="stylesheet" href="/assets/css/adminlte.min.css">
+
+<!-- ApexCharts (for charts) -->
+<link rel="stylesheet" href="/assets/css/apexcharts.css">
+
+<!-- JS Vector Map (for vector maps) -->
+<link rel="stylesheet" href="/assets/css/jsvectormap.min.css">
+
+<!-- Summernote (for WYSIWYG editor) -->
+<link rel="stylesheet" href="/assets/css/summernote-bs4.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+  <app-root></app-root>
+
+<!-- Popper.js (required for Bootstrap tooltips, popovers) -->
+<script src="/assets/js/popper.min.js"></script>
+
+<!-- Bootstrap Bundle (includes Bootstrap JS and Popper.js) -->
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="/assets/js/adminlte.bootstrap.bundle.min.js"></script>
+
+<!-- AdminLTE (Admin Dashboard template) -->
+<script src="/assets/js/adminlte.min.js"></script>
+
+<!-- OverlayScrollbars (custom scrollbar plugin) -->
+<script src="/assets/js/overlayscrollbars.browser.es6.min.js"></script>
+
+<!-- ApexCharts (charting library) -->
+<script src="/assets/js/apexcharts.min.js"></script>
+
+<!-- JS Vector Map (interactive maps) -->
+<script src="/assets/js/jsvectormap.min.js"></script>
+
+<!-- JS Vector Map - World map -->
+<script src="/assets/js/world.js"></script>
+
+<!-- SortableJS (library for creating sortable lists) -->
+<script src="/assets/js/Sortable.min.js"></script>
+
+<!-- Summernote (WYSIWYG text editor) -->
+<script src="/assets/js/summernote-bs4.min.js"></script>
+
+
+
+<script>
+  const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";
+  const Default = {
+    scrollbarTheme: "os-theme-light",
+    scrollbarAutoHide: "leave",
+    scrollbarClickScroll: true,
+  };
+  document.addEventListener("DOMContentLoaded", function () {
+    const sidebarWrapper = document.querySelector(SELECTOR_SIDEBAR_WRAPPER);
+    if (
+      sidebarWrapper &&
+      typeof OverlayScrollbarsGlobal?.OverlayScrollbars !== "undefined"
+    ) {
+      OverlayScrollbarsGlobal.OverlayScrollbars(sidebarWrapper, {
+        scrollbars: {
+          theme: Default.scrollbarTheme,
+          autoHide: Default.scrollbarAutoHide,
+          clickScroll: Default.scrollbarClickScroll,
+        },
+      });
+    }
+  });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+@media (max-width: 768px) {
+  .app-wrapper {
+      display: block!important; /* Remove flex and use block or any other layout you prefer */
+  }
+}

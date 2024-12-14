@@ -1,0 +1,4 @@
+<div class="wait-overlay" *ngIf="loadingService.loading$ | async">
+  <img src="/assets/img/wait.gif" alt="Searching...">
+</div>
+<router-outlet></router-outlet>

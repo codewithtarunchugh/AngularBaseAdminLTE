@@ -1,0 +1,18 @@
+
+@media (max-width: 768px) {
+  .note-toolbar {
+    font-size: 12px; /* Adjust for smaller screens */
+  }
+}
+
+/* Ensure the dropdowns are not hidden */
+.note-dropdown-menu {
+  z-index: 9999 !important;
+  display: block !important;
+}
+
+/* Ensure the toolbar and dropdown are properly styled */
+.note-toolbar {
+  display: block !important;
+  font-size: 14px;
+}
